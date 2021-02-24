@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Guwop | Contact</title>
+	<meta property="description" content="Welcome to the new age of social media management">
+	<link rel="stylesheet" type="text/css" href="index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+  <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <nav id="hamnav">
+      <!-- [THE HAMBURGER] -->
+      <label for="hamburger">&#9776;</label>
+      <input type="checkbox" id="hamburger"/>
+
+      <!-- [MENU ITEMS] -->
+      <a class="nav-name-container" href="">
+      	<p class="nav-name-1">"Guwop"</p>
+      	<p class="nav-name-2">James Cameron</p>
+      </a>
+      <div id="hamitems">
+        <a href="index.html">Home</a>
+        <a href="about.html">Services</a>
+        <a href="tech.html">Contact</a>
+      </div>
+    </nav>
+
+    <section class="section-1 container">
+      <div class="hero-container">
+    	 <p class="hero-heading">Contact</p>
+       <p>Fill out this form with any questions about my services or a consultation.</p>
+       <form action="https://formspree.io/f/mrgowzza" method="POST">
+        <label for="name">Name</label>
+        <input type="text" name="name" placeholder="Name">
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="Email@Email.com">
+        <label for="message">Message</label>
+        <textarea type="text" name="message" placeholder="Message"></textarea>
+        <input id="submit" type="submit" value="Send">
+      </form>
+    </section>
+
+    <footer>
+      <div>
+        <a class="footer-links" href="">Home</a>
+        <a class="footer-links" href="">Services</a>
+        <a class="footer-links" href="">Contact</a>
+      </div>
+      <div>
+        <a href="https://www.instagram.com/gnwwop/"><img class="social-media-icon" src="Assets/Images/Social Media Icons/Instagram.png"></a>
+        <a href="http://linkedin.com/in/james-“guwop”-cameron-6a297b200"><img class="social-media-icon" src="Assets/Images/Social Media Icons/LinkedIn.png"></a>
+        <a href="https://twitter.com/gnwop"><img class="social-media-icon" src="Assets/Images/Social Media Icons/Twitter.png"></a>
+      </div>
+      <p class="footer-cpr">© Guwop 2021. Web Experience by <a href="">Jan Rebolledo</a></p>
+    </footer>
+	
+  <script>
+    $(window).on("load",function(){
+      $(".loader-wrapper").fadeOut("slow");
+    });
+  </script>
+
+</body>
+</html>
