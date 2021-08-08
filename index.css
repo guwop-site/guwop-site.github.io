@@ -22,12 +22,10 @@ html, body {
 
 /* Start Nav */
 
-/* [ON BIG SCREENS] */
 /* Wrapper */
 #hamnav {
   width: 100%;
   background: rgba(0, 0, 0, 0.2);
-  /* Optional */
   position: absolute;
   z-index: 5;
   top: 0;
@@ -121,7 +119,7 @@ html, body {
 .loader-wrapper {
   width: 100%;
   height: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   background: rgb(79,172,254);
@@ -204,7 +202,6 @@ footer * {
 /* Hero Section */
 
 .section-1 {
-  background-image: url('Assets/Images/Section 1 Header.png');
   /*width: 100vw;*/
   height: 100vh;
   background-repeat: no-repeat;
@@ -264,6 +261,37 @@ footer * {
   display: inline-block;
 }
 
+.landing-socials {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: start;
+}
+
+.landing-social-link:first-child {
+  padding-left: 0;
+}
+
+.landing-social-link {
+  width: 25px;
+  padding: 0 5px 0 5px;
+}
+
+.landing-social-icon {
+  width: 100%;
+}
+
+.social-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-logo-heading {
+  margin-left: 15px;
+  width: 50px;
+}
+
 .button-1:hover {
   text-decoration: underline;
 }
@@ -305,9 +333,305 @@ footer * {
 
 /* Hero Section End */
 
+/* Instagram Grid */
+
+.instagram-section {
+  /*width: 100vw;*/
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-color: white;
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.instagram-grid {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.instagram-link {
+  flex-grow: 0;
+  height: 33%;
+  overflow: hidden;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 5px;
+}
+
+.instagram-link:hover > .instagram-hover {
+  opacity: 1;
+}
+
+.instagram-hover {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: .2s;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.instagram-hover-logo {
+  width: 10%;
+}
+
+.instagram-image {
+  height: 100%;
+}
+
+@media screen and (max-width: 980px) {
+  .instagram-grid {
+    position: static
+  }
+  .instagram-section {
+    height: auto;
+  }
+  .instagram-link {
+    height: 300px
+  }
+  .instagram-hover {
+    display: none;
+    position: static;
+  }
+  .instagram-link {
+    position: static;
+  }
+}
+
+/* Merchandise */
+
+.cart-button {
+  border: none;
+  appearance: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: .2s;
+  padding: 5px;
+}
+
+.cart-button > span {
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.cart-button:hover {
+  background-color: rgba(0, 0, 0, 0.2);;
+}
+
+.cart-icon {
+  width: 30px;
+}
+
+.section-2 {
+  /*width: 100vw;*/
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-color: white;
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+}
+
+.section-3 {
+  /*width: 100vw;*/
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-color: white;
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 15vh;
+}
+
+.shop-page-section {
+  margin-top: 15vh;
+}
+
+.shop-heading {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.shop-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.shop-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 25%;
+  text-decoration: none;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  padding: 30px;
+  margin: 15px;
+  color: black;
+}
+
+.shop-page-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  text-decoration: none;
+  margin: 15px;
+  color: black;
+}
+
+.shop-item:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+.shop-image-container {
+  position: relative;
+  width: 100%;
+}
+
+.shop-page-item > .shop-image-container {
+  width: 40%;
+}
+
+.shop-page-item > .splide {
+  width: 40%;
+  padding: 5%;
+}
+
+.splide__slide > img {
+  width: 100%;
+}
+
+.shop-image {
+  width: 100%;
+  opacity: 1;
+  transition: opacity .3s;
+}
+
+.shop-image-no-hover {
+  width: 100%;
+  opacity: 1;
+  transition: opacity .3s;
+}
+
+.shop-image-hover {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+.shop-image-container:hover > .shop-image-hover {
+  opacity: 1;
+}
+
+.shop-image-container:hover > .shop-image {
+  opacity: 0;
+}
+
+.shop-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin: 15px 0 5px 0;
+}
+
+.shop-price {
+  text-align: center;
+  margin: 5px;
+}
+
+.shop-description {
+  text-align: center;
+}
+
+.shop-description-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.shop-button {
+  padding: 15px 20px;
+  background-color: black;
+  border-radius: 30px;
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  appearance: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 980px) {
+  .section-2 {
+    height: auto;
+  }
+  .cart-button {
+    width: 100%;
+    justify-content: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  .cart-button > img {
+    width: 25px;
+  }
+  .section-3 {
+    margin-top: 5vh;
+  }
+  .shop-item {
+    width: 90%;
+  }
+  .shop-page-item {
+    flex-direction: column;
+  }
+  .shop-page-item > .splide {
+    width: 100%;
+    padding: 0%;
+  }
+  .shop-description-container {
+    padding: 0 5%;
+  }
+}
+
 /* Services */
 
 #services {
+  background-image: none;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -326,10 +650,6 @@ footer * {
   flex-direction: row;
   padding-top: 10vh;
   min-height: 80vh;
-}
-
-#services-heading {
-  
 }
 
 #service-icon {

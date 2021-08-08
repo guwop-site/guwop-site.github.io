@@ -7,6 +7,9 @@
 	<meta property="description" content="Welcome to the new age of social media management">
 	<link rel="stylesheet" type="text/css" href="index.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="preconnect" href="https://app.snipcart.com">
+  <link rel="preconnect" href="https://cdn.snipcart.com">
+  <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.css" />
 </head>
 <body>
 
@@ -28,8 +31,25 @@
         <a href="https://guwop.cc/">Home</a>
         <a href="https://guwop.cc/services">Services</a>
         <a href="https://guwop.cc/contact">Contact</a>
+        <a href="https://guwop.cc/shop">Shop</a>
+        <button class="snipcart-checkout cart-button"><img class="cart-icon" src="Assets/Images/Cart Icon.svg" alt=""><span class="snipcart-items-count"></span></button>
       </div>
     </nav>
+
+    <div id="snipcart" data-api-key="ZjJkNTg5ZjctNjdiYS00ZDExLWI4YmEtNTEyMGNjNDk1MTgyNjM3NjM4MjYwMjUyMTc1MzMz" data-config-modal-style="side" hidden></div>
+
+    <section class="section-1 container">
+      <div class="hero-container">
+    	 <p class="hero-heading">Welcome to the new age of Social Media Management</p>
+       <div>
+         <a href="https://guwop.cc/services" id="button-1" class="button-1">Services →</a>
+         <a href="https://guwop.cc/contact" id="button-2" class="button-2">Contact →</a>
+       </div>
+       <a href="Assets/Resume - James Cameron.pdf" class="download-resume" download>Download My Resume</a>
+      </div>
+      <div class="hero-image">
+        </div>
+    </section>
 
     <section id="services" class="section-1 container">
       <div class="hero-container">
@@ -155,6 +175,7 @@
         <a class="footer-links" href="https://guwop.cc/">Home</a>
         <a class="footer-links" href="https://guwop.cc/services">Services</a>
         <a class="footer-links" href="https://guwop.cc/contact">Contact</a>
+        <a class="footer-links" href="https://guwop.cc/shop">Shop</a>
       </div>
       <div>
         <a href="https://www.instagram.com/gnwwop/"><img class="social-media-icon" src="Assets/Images/Social Media Icons/Instagram.png"></a>
@@ -163,7 +184,10 @@
       </div>
       <p class="footer-cpr">© Guwop 2021. Web Experience by <a href="https://janrebolledo.com">Jan Rebolledo</a></p>
     </footer>
-	
+
+    <script async src="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.js"></script>
+    <div hidden id="snipcart" data-api-key="ZjJkNTg5ZjctNjdiYS00ZDExLWI4YmEtNTEyMGNjNDk1MTgyNjM3NjM4MjYwMjUyMTc1MzMz"></div>
+
   <script>
     $(window).on("load",function(){
       $(".loader-wrapper").fadeOut("slow");
