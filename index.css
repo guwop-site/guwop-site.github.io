@@ -637,6 +637,8 @@ footer * {
   flex-direction: column;
   justify-content: flex-start;
   padding-top: 15vh;
+  min-height: 100vh;
+  height: auto;
 }
 
 #services-2 {
